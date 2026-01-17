@@ -1,0 +1,180 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #161616;
+}
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+
+
+.box{
+    position: relative;
+    overflow: hidden;
+}
+
+.luz{
+    position: absolute;
+    width: 609px;
+    height: 609px;
+    background: #f3f2ef;
+    border-radius: 50%;
+    top: -136px;
+    left: -130px;
+    filter: blur(180px);
+    opacity: 1;
+    mix-blend-mode: screen; 
+    pointer-events: none;
+}
+
+.luz-2{
+    position: absolute;
+    background: #f3f2ef;
+    border-radius: 50%;
+    width: 429.2px;
+    height: 429.2px;
+    top: -226px;
+    left: 984.67px;
+    filter: blur(120px);
+    mix-blend-mode: screen; 
+    pointer-events: none;
+}
+
+
+
+
+.header{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 44px 80px;
+}
+
+
+.links-navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    
+}
+
+
+.nombre-pagina{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.25rem;
+    line-height: 100%;
+    padding: 2.458rem 2.383rem;
+}
+
+.items{
+    display: flex;
+    gap: 1rem;
+    margin: 3rem ;
+}
+
+.img-perfil{
+    width: 1.201rem;
+    height: 1.155rem;
+}
+
+.img-carrito{
+    width: 1.213rem;
+    height: 1.073rem;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    gap: 4rem;
+}
+
+
+
+.hero-texto{
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+
+.titulo-producto-principal{
+    font-size: clamp(4rem, 8vw, 8.14rem);
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.descripcion{
+    color: #ffffff;
+    width: 470px;
+    min-height: 112.81px;
+    max-width: 470px;
+}
+
+
+
+.precio{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.486rem;
+    margin-top: 0;    
+    width: 40%;
+}
+
+.boton-añadir-carrito{
+    width: 40%;
+}
+
+.boton-añadir-carrito button{
+    padding: 0.563rem 1.563rem;
+    border: 0.114rem solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    
+}
+
+.img-outfit-principal{
+    width: 669px;
+    max-width: 45%;
+    transform: translate(-10.7rem , 1rem);
+}
+
+
+.under-hero{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    transform: translate(-10rem , 3rem);
+}
+
+.under-hero p{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+
