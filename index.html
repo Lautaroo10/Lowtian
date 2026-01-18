@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -66,17 +70,169 @@
         <p class="precio-home">$38.00</p>
 
         <div class="circulos">
-                <div class="rosado"></div>
-                <div class="rojo"></div>
-                <div class="azul"></div>
-                <div class="amarillo"></div>
+            <div class="rosado"></div>
+            <div class="rojo"></div>
+            <div class="azul"></div>
+            <div class="amarillo"></div>
         </div>
 
         <div class="contenedor-link">
             <a class="ver-todo" href="#">ver todo</a>
         </div>
 
+        <div class="contenedor-sold-out">
+            <p>sold out</p>
+        </div>
 
+        <div class="contenedor-new-in">
+            <p>new in</p>
+            <img class="linea-horizontal" src="./imagenes/linea-horizontal.png" alt="linea-horizontal">
+        </div>
+
+        <h2 class="destacados">destacados</h2>
+
+    <section class="img-carrusel">
+    <div id="carouselExample" class="carousel slide">
+        
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="prendas-carusel">
+                    <div class="camperon-verde">
+                        <img src="./imagenes/camperon-verde.png" alt="verde">
+                        <p class="nombre-prenda">bomber warrior</p>
+                        <p class="precio-carrusel">$105.000</p>
+                    </div>
+                    <img src="./imagenes/camper-gris.png" alt="gris">
+                    <img src="./imagenes/./buzo-centro-verdee.png" alt="centro-verde">
+                </div>
+            </div>
+
+            
+            <div class="carousel-item">
+                <div class="prendas-carusel">
+                    <img src="./imagenes/campera.png" alt="pera">
+                </div>
+            </div>
+
+        </div>
+
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+
+
+        </div>
+
+        <img class="barra-seguimiento" src="./imagenes/barra.png" alt="barra">
+
+    </section>
+
+
+
+    <section>
+
+        <h2 class="titulo-categoria">categoria</h2>
+
+        <div class="img-categorias">
+            <div>
+                <img class="buzo-centro-verde" src="./imagenes/buzo-centro-verdee.png" alt="buzo-centro-verde">
+                <p class="nombre-producto">buzos</p>
+            </div>
+            <div>
+                <img src="./imagenes/remera.png" alt="remera">
+                <p class="nombre-producto">remera</p>
+            </div>
+            <div>
+                <img src="./imagenes/short.png" alt="short">
+                <p class="nombre-producto">short</p>
+            </div>
+            <div>
+                <img src="./imagenes/zapatilla-beish.png" alt="zapatilla-beish">
+                <p class="nombre-producto">zapatilla</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="correo">
+            <h3 class="newsletter">recibe nuestro newsletter</h3>
+            <p class="desc-correo">Para enterarte de promociones, nuevos productos en stock y mucho mas</p>
+            <div class="correo-input">
+                <input class="inp-correo" type="email" placeholder="Dirección de correo electrónico" required/>
+                <button class="btn-flecha">
+                    <img src="./imagenes/flecha.png" alt="Enviar"/>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="box-footer">
+            <div class="img-footer">
+                <img src="./imagenes/logo-marca.png" alt="logo-marca">
+            </div>
+            <div class="contactos">
+                <h4>contactos</h4>
+                <p>+11 4567 8910</p>
+                <p>lowtianwear@gmail.com</p>
+                <p>Barcelona 344, Buenos Aires</p>
+                <div class="redes-sociales">
+                    <a href="#">
+                        <img src="./imagenes/logo-tiktok.png" alt="logo-tiktok">
+                    </a>
+                    <a href="#">
+                        <img src="./imagenes/logo-instagram.png" alt="logo-instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./imagenes/logo-facebook.png" alt="logo-facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="politicas">
+                <h4>terminos y condiciones</h4>
+                <a href="#">politica de cambios</a>
+                <a href="#">envios</a>
+                <a href="#">devoluciones</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous">
+        </script>
     </main>
     </div>
 </body>
