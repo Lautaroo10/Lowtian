@@ -388,7 +388,13 @@ main{
     padding: 2rem;
 }
 
+.camperon-gris img{
+    width: 245px;
+}
 
+.campera-centro-verde img{
+    width: 245px;
+}
 
 .carousel-control-prev {
     left: 2rem;
