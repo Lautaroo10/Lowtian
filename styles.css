@@ -7,11 +7,16 @@
 
 body{
     margin: 0;
+    background-color: #161616;
 }
 
 
 
 
+main{
+    margin-top: 80px; 
+    background-color: #fff;
+}
 
 
 
@@ -35,6 +40,7 @@ body{
     opacity: 1;
     mix-blend-mode: screen; 
     pointer-events: none;
+    z-index: 2000 ;
 }
 
 .luz-2{
@@ -48,19 +54,33 @@ body{
     filter: blur(120px);
     mix-blend-mode: screen; 
     pointer-events: none;
+    z-index: 2000;
 }
 
 
 /* header */
 
 .header{
-    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; 
+    padding: 0 80px;
+    background: linear-gradient(
+        to bottom,
+        #161616 0%,
+        rgba(22,22,22,0.95) 60%,
+        rgba(22,22,22,0.9) 80%,
+        #161616 100%
+    );
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 44px 80px;
-    background-color: #161616;
+    justify-content: space-between;
+    z-index: 1000;
 }
+
+
 
 
 .links-navegacion{
@@ -86,13 +106,16 @@ body{
     font-style: bold;
     font-size: 1.25rem;
     line-height: 100%;
-    padding: 2.458rem 2.383rem;
+    padding:0;
+    margin: 0;
+    color: #fff;
 }
+
 
 .items{
     display: flex;
     gap: 1rem;
-    margin: 3rem ;
+    margin: 0 ;
 }
 
 .img-perfil{
@@ -365,6 +388,23 @@ body{
     padding: 2rem;
 }
 
+
+
+.carousel-control-prev {
+    left: 2rem;
+}
+
+.carousel-control-next {
+    right: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(1);
+}
+
 .nombre-prenda{
     text-transform: uppercase;
     font-size: 16px;
@@ -399,6 +439,12 @@ body{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    transition: transform 0.5s;
+}
+
+.img-categorias :hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .buzo-centro-verde{
