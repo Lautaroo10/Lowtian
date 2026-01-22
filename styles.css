@@ -102,7 +102,7 @@ main{
 .nombre-pagina{
     letter-spacing: 4px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     font-style: bold;
     font-size: 1.25rem;
     line-height: 100%;
@@ -140,7 +140,7 @@ main{
 
 
 .hero-texto{
-    max-width: 55%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -150,10 +150,12 @@ main{
 
 
 .titulo-producto-principal{
-    font-size: clamp(4rem, 8vw, 8.14rem);
+    font-size: 10rem;
     white-space: nowrap;
     text-transform: uppercase;
     color: #fff;
+    width: 120%;
+    margin-left: -3.5rem;
 }
 
 
@@ -170,12 +172,13 @@ main{
     color: #ffffff;
     font-weight: 600;
     font-size: 2.486rem;
-    margin-top: 0;    
+    margin-top: -2.5rem;    
     width: 40%;
 }
 
 .boton-añadir-carrito{
     width: 40%;
+    margin-top: -1.5rem;
 }
 
 .boton-añadir-carrito button{
@@ -187,18 +190,22 @@ main{
 }
 
 .img-outfit-principal{
-    width: 669px;
+    width: 529px;
     max-width: 45%;
-    transform: translate(-10.7rem , 1rem);
+    position: relative;
+    top: 5rem;          
+    left: -22rem; 
 }
 
+.img-producto-mq{
+    display: none;
+}
 
 .under-hero{
     display: flex;
     align-items: center;
     color: #ffffff;
-    transform: translate(-10rem , 3rem);
-    transform: translatex(-150px);
+    margin-left: -10rem;
 }
 
 .under-hero p{
@@ -206,12 +213,20 @@ main{
     transform: rotate(180deg);
 }
 
+.titulo-mq{
+    display: none;
+}
+
+.nike-mq{
+    display: none;
+}
+
 
 /* home */
 
 .caja-promocion{
     background-color: #e2e2e2;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 
 
@@ -220,6 +235,17 @@ main{
     font-size: 18px;
     font-weight: 500;
     color: #000000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.flecha{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
 }
 
 
@@ -228,6 +254,7 @@ main{
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 600;
+    padding-top: 31px;
 }
 
 
@@ -268,6 +295,7 @@ main{
     color: #000000;
     text-align: center;
     text-transform: uppercase;
+    margin-top: -1rem;
 }
 
 .precio-home{
@@ -277,11 +305,11 @@ main{
     text-align: center;
 }
 
-.contenedor-link{
+.contenedor-link-deskpot{
     display: flex;
     justify-content: flex-end;
     padding: 5rem;
-    margin-top: -3rem;
+    margin-top: -6rem;
 }
 
 .ver-todo{
@@ -308,6 +336,7 @@ main{
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    border: 2px solid #000000 ;
 }
 
 
@@ -334,7 +363,7 @@ main{
     border: 1.83px solid #adadad;
     width: 10rem;
     height: 2.5rem;  
-    margin: -3rem auto 0;
+    margin: -4rem auto 0;
 }
 
 .contenedor-sold-out p{
@@ -445,6 +474,7 @@ main{
     text-align: center;
     margin: 10rem;
     text-transform: uppercase;
+    padding-top: 2rem;
 }
 
 
@@ -454,11 +484,11 @@ main{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    transition: transform 0.5s;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .img-categorias :hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -541,6 +571,9 @@ footer{
     background-color: #181818;
     width: 100%;
     height: 50vh;
+    display: flex;
+    justify-content: center; /* eje horizontal */
+    align-items: center;     /* eje vertical */
 }
 
 
@@ -555,8 +588,9 @@ footer{
 .contactos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-    margin-top: 4.5rem;
+    text-transform: capitalize;
 }
 
 .contactos p{
@@ -567,6 +601,7 @@ footer{
 
 .img-footer{
     margin-right: 3rem;
+    justify-content: center;
 }
 
 .redes-sociales{
@@ -579,7 +614,9 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: -2rem;
+    text-transform: capitalize;
+    justify-content: center;
 }
 
 .politicas a{
@@ -587,6 +624,7 @@ footer{
     font-size: 14.74px;
     font-weight: 400;
     color: #838282;
+    text-transform: capitalize;
 }
 
 h4{
@@ -594,4 +632,192 @@ h4{
     font-weight: 700;
     color: #fff;
 }
+
+.ver-todo-mobile-only{
+    display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  /* ================= HEADER ================= */
+
+  .header {
+    padding: 0 1.5rem;
+    height: 64px;
+    justify-content: space-between;
+    z-index: 3000;
+  }
+
+  .luz{
+    z-index: 4000;
+  }
+
+  .links-navegacion {
+    display: none;
+  }
+
+  .nombre-pagina {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .items {
+    margin-left: auto;
+  }
+
+  .img-perfil {
+    display: none;
+  }
+
+  /* Ajustar carrito */
+  .img-carrito {
+    width: 1.3rem;
+    height: auto;
+  }
+
+
+  /* ================= HERO ================= */
+
+  .hero {
+    flex-direction: column;
+    padding: 6rem 1.5rem 2rem;
+    gap: 2rem;
+    position: relative;
+  }
+
+  /* Imagen principal */
+  .img-outfit-principal {
+    display: none;
+  }
+
+  .img-producto-mq{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: -10rem;
+  }
+
+  /* Texto */
+  .hero-texto {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .titulo-producto-principal {
+    display: none;
+  }
+
+  .descripcion {
+    display: none;
+  }
+
+  .precio-hero {
+   display: none;
+  }
+
+  .boton-añadir-carrito {
+    display: none;
+  }
+
+
+
+  /* ================= NEW IN ================= */
+
+  .under-hero {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.1rem;
+    transform: none;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .under-hero img{
+    width: auto;
+    height: 90px;
+  }
+
+  .under-hero p {
+    writing-mode: vertical-rl;
+    transform: rotate(270deg);
+    font-size: 0.75rem;
+    transform: translate(-1rem , 4.5rem);
+  }
+
+  .titulo-mq {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  transform: translate(-36%,30%);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: start;
+  line-height: 0.95;
+  letter-spacing: 2px;
+  color: #ffffff;   
+  display: block;    
+  pointer-events: none;
+}
+
+.nike-mq{
+    position: absolute;
+    bottom: 3.5rem;
+    transform: translate(6.5rem,-22rem);
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #ffffff;   
+    display: block;    
+    pointer-events: none;
+}
+
+.new-in{
+    text-align: left;
+    font-size: 1.7rem;
+    padding: 2rem;
+    display: inline-block;
+}
+.caja-promocion{
+    display: none;
+}
+
+
+.contenedor-link-deskpot{
+    display: none;
+}
+
+.contenedor-new-in{
+    display: none;
+}
+
+.ver-todo-mobile-only{
+        display: block;
+        text-align: right;
+        padding: 0 2.5rem;
+        margin-top: -4.3rem;
+        color: #000000;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        font-size: 1rem;
+        font-weight: 600;
+}
+
+
+    
+}
+
+
 
