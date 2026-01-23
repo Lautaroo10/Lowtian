@@ -150,7 +150,7 @@ main{
 
 
 .titulo-producto-principal{
-    font-size: 10rem;
+    font-size: 9rem;
     white-space: nowrap;
     text-transform: uppercase;
     color: #fff;
@@ -193,8 +193,8 @@ main{
     width: 529px;
     max-width: 45%;
     position: relative;
-    top: 5rem;          
-    left: -22rem; 
+    top: 4.3rem;          
+    left: -21rem; 
 }
 
 .img-producto-mq{
