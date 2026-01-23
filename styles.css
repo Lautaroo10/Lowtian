@@ -232,7 +232,7 @@ main{
 
 .caja-promocion p{
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     color: #000000;
     margin: 0;
@@ -243,7 +243,7 @@ main{
 }
 
 .flecha{
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     user-select: none;
 }
@@ -252,9 +252,9 @@ main{
 .new-in{
     text-align: center;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-top: 31px;
+    padding-top: 1.3rem;
 }
 
 
@@ -289,7 +289,7 @@ main{
     z-index: 1;
 }
 
-.hoodie-winegrape{
+.hoodie-winegrape-dk{
     font-weight: 500;
     font-size: 1rem;
     color: #000000;
@@ -298,7 +298,7 @@ main{
     margin-top: -1rem;
 }
 
-.precio-home{
+.precio-home-dk{
     font-weight: 600;
     font-size: 1rem;
     color: #000000;
@@ -325,16 +325,16 @@ main{
     padding: 0.75rem 1.5rem;
 }
 
-.circulos{
+.circulos-dk{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem; 
 }
 
-.circulos div{
-    width: 24px;
-    height: 24px;
+.circulos-dk div{
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     border: 2px solid #000000 ;
 }
@@ -394,7 +394,7 @@ main{
 }
 
 .destacados{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 600;
     color: #000000;
     margin:  10rem;
@@ -410,7 +410,7 @@ main{
 }
 
 .prendas-carusel img{
-    width: 270px;
+    width: 16.875rem;
     height: auto;
     display: flex;
     background-color: #f4f4f4;
@@ -418,11 +418,11 @@ main{
 }
 
 .camperon-gris img{
-    width: 245px;
+    width: 15.313rem;
 }
 
 .campera-centro-verde img{
-    width: 245px;
+    width: 15.313rem;
 }
 
 
@@ -451,13 +451,13 @@ main{
 
 .nombre-prenda{
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400 ;
     margin-top: 1rem;
 }
 
 .precio-carrusel{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -469,7 +469,7 @@ main{
 
 
 .titulo-categoria{
-    font-size: 36px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     margin: 10rem;
@@ -517,13 +517,13 @@ main{
 }
 
 .newsletter {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .desc-correo {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin-top: 0.3rem;
 }
@@ -562,7 +562,7 @@ main{
 }
 
 .btn-flecha img {
-    width: 18px;
+    width: 1.2rem;
     display: block;
 }
 
@@ -594,7 +594,7 @@ footer{
 }
 
 .contactos p{
-    font-size: 14.74px;
+    font-size: 1rem;
     font-weight: 400;
     color: #838282;
 }
@@ -621,14 +621,14 @@ footer{
 
 .politicas a{
     text-decoration: none;
-    font-size: 14.74px;
+    font-size: 1rem;
     font-weight: 400;
     color: #838282;
     text-transform: capitalize;
 }
 
 h4{
-    font-size: 14.74px;
+    font-size: 1rem;
     font-weight: 700;
     color: #fff;
 }
@@ -637,101 +637,110 @@ h4{
     display: none;
 }
 
+.carousel-mq{
+    display: none;
+}
 
+
+.footer-mq{
+    display: none;
+}
 
 
 @media (max-width: 768px) {
 
   /* ================= HEADER ================= */
 
-  .header {
+.header {
     padding: 0 1.5rem;
     height: 64px;
     justify-content: space-between;
     z-index: 3000;
-  }
+}
 
-  .luz{
+.luz{
     z-index: 4000;
-  }
+}
 
-  .links-navegacion {
+.links-navegacion {
     display: none;
-  }
+}
 
-  .nombre-pagina {
+.nombre-pagina {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
     letter-spacing: 4px;
-  }
+}
 
-  .items {
+.items {
     margin-left: auto;
-  }
+}
 
-  .img-perfil {
+.img-perfil {
     display: none;
-  }
+}
 
   /* Ajustar carrito */
-  .img-carrito {
+.img-carrito {
     width: 1.3rem;
     height: auto;
-  }
+}
 
 
   /* ================= HERO ================= */
 
-  .hero {
+.hero {
     flex-direction: column;
     padding: 6rem 1.5rem 2rem;
     gap: 2rem;
     position: relative;
-  }
+}
 
   /* Imagen principal */
-  .img-outfit-principal {
+.img-outfit-principal {
     display: none;
-  }
+}
 
-  .img-producto-mq{
+.img-producto-mq{
     display: block;
     width: 100%;
     max-width: 100%;
     margin-top: -10rem;
-  }
+}
 
   /* Texto */
-  .hero-texto {
+.hero-texto {
     max-width: 100%;
     align-items: center;
     text-align: center;
     gap: 1.2rem;
-  }
+}
 
-  .titulo-producto-principal {
+.titulo-producto-principal {
     display: none;
-  }
+}
 
-  .descripcion {
+.descripcion {
     display: none;
-  }
+}
 
-  .precio-hero {
-   display: none;
-  }
-
-  .boton-añadir-carrito {
+.precio-hero {
     display: none;
-  }
+}
 
+.boton-añadir-carrito {
+    display: none;
+}
 
+.carrito-mq{
+    display: none;
+}
 
   /* ================= NEW IN ================= */
 
-  .under-hero {
+.under-hero {
     position: absolute;
     left: 1rem;
     bottom: 0.1rem;
@@ -739,34 +748,34 @@ h4{
     flex-direction: column;
     align-items: center;
     
-  }
+}
 
-  .under-hero img{
+.under-hero img{
     width: auto;
     height: 90px;
-  }
+}
 
-  .under-hero p {
+.under-hero p {
     writing-mode: vertical-rl;
     transform: rotate(270deg);
     font-size: 0.75rem;
     transform: translate(-1rem , 4.5rem);
-  }
+}
 
-  .titulo-mq {
-  position: absolute;
-  bottom: 3.5rem;
-  left: 50%;
-  transform: translate(-36%,30%);
-  font-size: 3rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: start;
-  line-height: 0.95;
-  letter-spacing: 2px;
-  color: #ffffff;   
-  display: block;    
-  pointer-events: none;
+.titulo-mq {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 50%;
+    transform: translate(-36%,30%);
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: start;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #ffffff;   
+    display: block;    
+    pointer-events: none;
 }
 
 .nike-mq{
@@ -813,10 +822,206 @@ h4{
         text-underline-offset: 4px;
         font-size: 1rem;
         font-weight: 600;
+        text-transform: uppercase;
+}
+
+.img-catalogo{
+    display: none;
 }
 
 
+.carousel-mq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
     
+}
+
+.carousel{
+    width: 380px;
+}
+
+.carousel-img-mq {
+    width: 260px; 
+    height: 260px;
+    margin: 0 auto;
+    display: block;   
+}
+
+
+.contenedor-sold-out{
+    display: none;
+}
+
+
+
+
+
+.circulos-dk{
+    display: none;
+}
+
+.precio-home-dk{
+    display: none;
+}
+
+.hoodie-winegrape-dk{
+    display: none;
+}
+
+.hoodie-winegrape-mq{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -1rem;
+}
+
+.precio-home-mq{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+}
+
+
+
+
+
+.circulos-mq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.circulos-mq div{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid #000000 ;
+}
+
+.carrito-mq{
+    display: flex;
+    background-color: #000000;
+    width: 40vw;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.carrito-mq p{
+    color: #fff;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.destacados{
+    margin: 4rem 3rem;
+    font-size: 2rem;
+}
+    
+
+.titulo-categoria{
+    margin: 3rem;
+}
+
+.img-categorias {
+    display: grid;
+    grid-template-columns: repeat(2, 185px);
+    justify-items: center;
+    gap: 0.5rem; 
+}
+
+.img-categorias div {
+    width: 170px;
+    text-align: center;
+    margin: 0; 
+}
+
+
+.img-categorias img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.correo{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter {
+    white-space: nowrap;
+}
+
+.desc-correo{
+    padding: 0;
+    width: 100%;
+}
+
+
+
+    footer {
+        padding: 0;
+        height: 30vh;
+    }
+
+    .box-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+.img-footer {
+        width: 170px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .img-footer img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: 3rem;
+        margin-top: -4rem;
+    }
+
+.politicas{
+    display: none;
+}
+
+.contactos{
+    display: none;
+}
+
+.footer-mq{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+
+.footer-mq h4{
+    text-transform: uppercase;
+}
+
+
 }
 
 
