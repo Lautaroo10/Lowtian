@@ -58,6 +58,7 @@ main{
 }
 
 
+
 /* header */
 
 .header{
@@ -186,8 +187,9 @@ main{
     border: 0.114rem solid #ffffff;
     background-color: transparent;
     color: #ffffff;
-    
 }
+
+
 
 .img-outfit-principal{
     width: 529px;
@@ -196,6 +198,18 @@ main{
     top: 4.3rem;          
     left: -21rem; 
 }
+
+.hero-img {
+    flex-shrink: 0;         
+    width: 1180px;            
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .img-producto-mq{
     display: none;
@@ -572,8 +586,8 @@ footer{
     width: 100%;
     height: 50vh;
     display: flex;
-    justify-content: center; /* eje horizontal */
-    align-items: center;     /* eje vertical */
+    justify-content: center; 
+    align-items: center;     
 }
 
 
@@ -649,7 +663,7 @@ h4{
 
 @media (max-width: 768px) {
 
-  /* ================= HEADER ================= */
+  /*HEADER */
 
 .header {
     padding: 0 1.5rem;
@@ -659,7 +673,39 @@ h4{
     display: flex;
 }
 
+.hero-img{
+    display: none;
+}
+
 .luz{
+    z-index: 4000;
+    position: absolute;
+    left: -350px;
+    top: -580px;
+}
+
+.luz-2 {
+    position: absolute;
+    z-index: 4000;
+    right: -430px;
+    top: -100px;
+    left: auto;
+    bottom: auto;
+}
+
+
+.luz-3{
+    position: absolute;
+    background: #f3f2ef;
+    border-radius: 50%;
+    width: 429.2px;
+    height: 429.2px;
+    top: 130px;
+    left: -350.67px;
+    bottom: auto;
+    filter: blur(120px);
+    mix-blend-mode: screen; 
+    pointer-events: none;
     z-index: 4000;
 }
 
@@ -694,7 +740,7 @@ h4{
     display: none;
 }
 
-  /* Ajustar carrito */
+
 .img-carrito {
     width: 1.3rem;
     height: auto;
@@ -703,7 +749,7 @@ h4{
 
 
 
-  /* ================= HERO ================= */
+  /*HERO  */
 
 .hero {
     flex-direction: column;
@@ -712,7 +758,7 @@ h4{
     position: relative;
 }
 
-  /* Imagen principal */
+
 .img-outfit-principal {
     display: none;
 }
@@ -722,9 +768,10 @@ h4{
     width: 100%;
     max-width: 100%;
     margin-top: -10rem;
+    z-index: 5;
 }
 
-  /* Texto */
+
 .hero-texto {
     max-width: 100%;
     align-items: center;
@@ -752,7 +799,6 @@ h4{
     display: none;
 }
 
-  /* ================= NEW IN ================= */
 
 .under-hero {
     position: absolute;
@@ -780,9 +826,9 @@ h4{
     position: absolute;
     bottom: 3.5rem;
     left: 50%;
-    transform: translate(-36%,30%);
-    font-size: 3rem;
-    font-weight: 800;
+    transform: translate(-41%,40%);
+    font-size: 3.2rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: start;
     line-height: 0.95;
@@ -795,9 +841,9 @@ h4{
 .nike-mq{
     position: absolute;
     bottom: 3.5rem;
-    transform: translate(6.5rem,-22rem);
-    font-size: 3rem;
-    font-weight: 800;
+    transform: translate(6.9rem,-25rem);
+    font-size: 3.5rem;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: start;
     line-height: 0.95;
@@ -1010,7 +1056,7 @@ h4{
         height: auto;
         display: block;
         margin-left: 3rem;
-        margin-top: -4rem;
+        margin-top: -2rem;
     }
 
 .politicas{
@@ -1027,7 +1073,7 @@ h4{
     gap: 0.5rem;
     justify-content: center;
     align-items: start;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     margin-left: 2rem;
 }
 
