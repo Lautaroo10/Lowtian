@@ -440,11 +440,11 @@ main{
 }
 
 
-.futuros-productos{
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
+
+
+.camperon-verde img{
+    width: 245px;
+    height: 290.9px;
 }
 
 
@@ -500,6 +500,15 @@ main{
     gap: 3rem;
 }
 
+
+
+.zapas img{
+    width: 241px;
+    height: 278px;
+    background-color: #f4f4f4
+}
+
+
 .img-categorias :hover{
     transform: scale(1.02);
     cursor: pointer;
@@ -519,6 +528,10 @@ main{
     text-align: center;
     margin: 1rem;
 }
+
+
+
+
 
 .correo {
     background-color: #f2f2f2;
@@ -660,8 +673,17 @@ h4{
     display: none;
 }
 
+.carousel-mq1{
+    display: none;
+}
 
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
+
+.carousel-dk{
+    display: none;
+}
+
 
   /*HEADER */
 
@@ -763,12 +785,18 @@ h4{
     display: none;
 }
 
-.img-producto-mq{
-    display: block;
+.hero-img-mq {
     width: 100%;
-    max-width: 100%;
-    margin-top: -10rem;
+    position: relative;
     z-index: 5;
+}
+
+
+
+.img-producto-mq{
+    width: 100%;
+    display: block;
+    margin-top: -6rem; /* controlado */
 }
 
 
@@ -824,34 +852,37 @@ h4{
 
 .titulo-mq {
     position: absolute;
-    bottom: 3.5rem;
-    left: 50%;
-    transform: translate(-41%,40%);
-    font-size: 3.2rem;
+    bottom: 2.5rem;              /* altura consistente */
+    left: 45%;
+    transform: translateX(-50%); /* centrado real */
+    font-size: clamp(2.6rem, 10vw, 3.4rem);
     font-weight: 600;
     text-transform: uppercase;
-    text-align: start;
+    text-align: center;
     line-height: 0.95;
     letter-spacing: 2px;
-    color: #ffffff;   
-    display: block;    
+    color: #ffffff;
+    display: block;
     pointer-events: none;
+    z-index: 6;
 }
 
-.nike-mq{
+
+.nike-mq {
+    display: block;
     position: absolute;
-    bottom: 3.5rem;
-    transform: translate(6.9rem,-25rem);
-    font-size: 3.5rem;
+    top: 1rem;                
+    left: 77%;
+    transform: translateX(-50%);
+    font-size: clamp(2.6rem, 8vw, 3.5rem); 
     font-weight: 600;
     text-transform: uppercase;
-    text-align: start;
-    line-height: 0.95;
-    letter-spacing: 2px;
-    color: #ffffff;   
-    display: block;    
+    color: #ffffff;
     pointer-events: none;
+    z-index: 6;
 }
+
+
 
 .new-in{
     text-align: left;
@@ -896,6 +927,15 @@ h4{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+}
+
+
+.carousel-mq1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
     
 }
 
@@ -916,7 +956,9 @@ h4{
 }
 
 
-
+.carousel-item img{
+    width: 300px;
+}
 
 
 .circulos-dk{
@@ -987,7 +1029,17 @@ h4{
     margin: 4rem 3rem;
     font-size: 2rem;
 }
-    
+
+
+
+
+.carousel-item img{
+    width: 220px ;
+    height: 260px;
+}
+
+
+
 
 .titulo-categoria{
     margin: 3rem;
@@ -1007,9 +1059,12 @@ h4{
 }
 
 
+
+
+
 .img-categorias img {
     width: 100%;
-    height: auto;
+    height: 196px;
     object-fit: contain;
 }
 
@@ -1081,9 +1136,7 @@ h4{
     text-transform: uppercase;
 }
 
-.prendas-carusel{
-        margin-left: 1.5rem;
-}
+
 
 
     .img-carrusel .carousel-control-prev {
@@ -1094,8 +1147,290 @@ h4{
     right: -2rem;
 }
 
+.carousel-control-next-icon{
+    margin-right: -5.5rem;
+}
+
+.carousel-control-prev-icon{
+    margin-left: -5.5rem;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .nombre-pagina{
+        margin-left: -2.5rem;
+    }
+
+
+    .items{
+        margin-right: -3.5rem;
+    }
+
+
+    .hero {
+    padding: 0 6rem;
+  }
+
+  .titulo-producto-principal {
+    font-size: 4.5rem;
+    margin-left: -2rem;
+  }
+
+  .img-outfit-principal {
+    width: 420px;
+    left: -17rem;
+    top: 2.2rem;
+  }
+
+  .descripcion {
+    max-width: 380px;
+  }
+
+.img-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* siguen siendo 4 */
+    gap: 1.5rem;
+    padding: 0 3rem;
+}
+
+.img-categorias div {
+    max-width: 180px;   /* 🔑 achica contenedor */
+    margin: 0 auto;
+}
+
+.img-categorias img {
+    width: 100%;
+    height: auto;
+}
+
+.nombre-producto {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+
+
+
+
+
+
+        footer {
+        padding: 0;
+        height: 30vh;
+    }
+
+    .box-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+.img-footer {
+        width: 170px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .img-footer img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: 3rem;
+        margin-top: -2rem;
+    }
+
+.politicas{
+    display: none;
+}
+
+.contactos{
+    display: none;
+}
+
+.footer-mq{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.footer-mq h4{
+    text-transform: uppercase;
+
+
 
 }
 
 
 
+
+
+
+  .prendas-carusel {
+    gap: 2.5rem;      
+    padding: 0 2rem;
+  }
+
+
+  .prendas-carusel article {
+    max-width: 220px; 
+  }
+
+ 
+  .prendas-carusel img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .camperon-verde img{
+    height:234.49px
+  }
+
+  
+  .nombre-prenda {
+    font-size: 0.85rem;
+  }
+
+  .precio-carrusel {
+    font-size: 1rem;
+  }
+
+
+  .barra-seguimiento{
+    padding: 3rem
+  }
+
+  .carousel-control-next-icon{
+    margin-right: -8rem;
+}
+
+.carousel-control-prev-icon{
+    margin-left: -8rem;
+}
+
+
+
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .titulo-producto-principal {
+    font-size: 6.5rem;
+    margin-left: -2rem;
+    width: 110%;
+  }
+
+   .hero-img {
+    width: 1180px;
+  }
+
+  .img-outfit-principal {
+    width: 420px;
+    left: -14rem;
+    top: 3rem;
+  }
+
+
+    .descripcion {
+    max-width: 380px;
+    font-size: 0.95rem;
+  }
+
+  .precio-hero {
+    font-size: 2rem;
+    margin-top: -1.5rem;
+  }
+
+  .boton-añadir-carrito {
+    width: 45%;
+  }
+
+   .hero {
+    padding: 0 6rem;
+    gap: 3rem;
+  }
+
+
+   .prendas-carusel {
+    gap: 2.5rem;      
+    padding: 0 2rem;
+  }
+
+
+  .prendas-carusel article {
+    max-width: 220px; 
+  }
+
+ 
+  .prendas-carusel img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .camperon-verde img{
+    height:234.49px
+  }
+
+  
+  .nombre-prenda {
+    font-size: 0.85rem;
+  }
+
+  .precio-carrusel {
+    font-size: 1rem;
+  }
+
+.barra-seguimiento{
+    padding: 3rem
+  }
+
+    .carousel-control-next-icon{
+    margin-right: -7rem;
+}
+
+.carousel-control-prev-icon{
+    margin-left: -7rem;
+}
+
+.img-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* siguen siendo 4 */
+    gap: 1.5rem;
+    padding: 0 3rem;
+}
+
+.img-categorias div {
+    max-width: 180px;   /* 🔑 achica contenedor */
+    margin: 0 auto;
+}
+
+.img-categorias img {
+    width: 100%;
+    height: auto;
+}
+
+.nombre-producto {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+
+
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .titulo-producto-principal{
+       margin-left: -5.5rem;
+    }
+}
