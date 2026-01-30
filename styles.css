@@ -734,7 +734,7 @@ h4{
 .icon-navbar {
         width: 20px;
         display: flex;
-        margin-top: 2rem;
+        margin-top: 0.8rem;
     }
 
 
@@ -750,12 +750,12 @@ h4{
     font-size: 2rem;
     letter-spacing: 4px;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
 .items {
     margin-left: auto;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
 .img-perfil {
@@ -765,7 +765,7 @@ h4{
 
 .img-carrito {
     width: 1.3rem;
-    height: auto;
+
 }
 
 
@@ -796,7 +796,7 @@ h4{
 .img-producto-mq{
     width: 100%;
     display: block;
-    margin-top: -6rem; /* controlado */
+    margin-top: -6rem; 
 }
 
 
@@ -852,9 +852,9 @@ h4{
 
 .titulo-mq {
     position: absolute;
-    bottom: 2.5rem;              /* altura consistente */
+    bottom: 2.5rem;              
     left: 45%;
-    transform: translateX(-50%); /* centrado real */
+    transform: translateX(-50%); 
     font-size: clamp(2.6rem, 10vw, 3.4rem);
     font-weight: 600;
     text-transform: uppercase;
@@ -904,16 +904,16 @@ h4{
 }
 
 .ver-todo-mobile-only{
-        display: block;
-        text-align: right;
-        padding: 0 2.5rem;
-        margin-top: -4.3rem;
-        color: #000000;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-        font-size: 1rem;
-        font-weight: 600;
-        text-transform: uppercase;
+    display: block;
+    text-align: right;
+    padding: 0 2.5rem;
+    margin-top: -4.3rem;
+    color: #000000;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .img-catalogo{
@@ -1085,34 +1085,34 @@ h4{
 
 
 
-    footer {
-        padding: 0;
-        height: 30vh;
+footer {
+    padding: 0;
+    height: 30vh;
     }
 
-    .box-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
+.box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     }
 
 
 .img-footer {
-        width: 170px;
-        justify-content: center;
-        align-items: center;
-    }
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+}
 
 
-    .img-footer img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: 3rem;
-        margin-top: -2rem;
-    }
+.img-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 3rem;
+    margin-top: -2rem;
+}
 
 .politicas{
     display: none;
@@ -1139,7 +1139,7 @@ h4{
 
 
 
-    .img-carrusel .carousel-control-prev {
+.img-carrusel .carousel-control-prev {
     left: -0.4rem;
 }
 
@@ -1160,44 +1160,44 @@ h4{
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .nombre-pagina{
-        margin-left: -2.5rem;
-    }
+.nombre-pagina{
+    margin-left: -2.5rem;
+}
 
 
-    .items{
-        margin-right: -3.5rem;
-    }
+.items{
+    margin-right: -3.5rem;
+}
 
 
-    .hero {
+.hero {
     padding: 0 6rem;
-  }
+}
 
-  .titulo-producto-principal {
+.titulo-producto-principal {
     font-size: 4.5rem;
     margin-left: -2rem;
-  }
+}
 
-  .img-outfit-principal {
+.img-outfit-principal {
     width: 420px;
     left: -17rem;
     top: 2.2rem;
-  }
+}
 
-  .descripcion {
+.descripcion {
     max-width: 380px;
-  }
+}
 
 .img-categorias {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* siguen siendo 4 */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1.5rem;
     padding: 0 3rem;
 }
 
 .img-categorias div {
-    max-width: 180px;   /* 🔑 achica contenedor */
+    max-width: 180px;   
     margin: 0 auto;
 }
 
@@ -1217,34 +1217,34 @@ h4{
 
 
 
-        footer {
-        padding: 0;
-        height: 30vh;
-    }
+footer {
+    padding: 0;
+    height: 30vh;
+}
 
-    .box-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
+.box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
 
 
 .img-footer {
-        width: 170px;
-        justify-content: center;
-        align-items: center;
-    }
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+}
 
 
-    .img-footer img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: 3rem;
-        margin-top: -2rem;
-    }
+.img-footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 3rem;
+    margin-top: -2rem;
+}
 
 .politicas{
     display: none;
@@ -1266,9 +1266,6 @@ h4{
 
 .footer-mq h4{
     text-transform: uppercase;
-
-
-
 }
 
 
@@ -1276,41 +1273,41 @@ h4{
 
 
 
-  .prendas-carusel {
+.prendas-carusel {
     gap: 2.5rem;      
     padding: 0 2rem;
-  }
+}
 
 
-  .prendas-carusel article {
+.prendas-carusel article {
     max-width: 220px; 
-  }
+}
 
- 
-  .prendas-carusel img {
+
+.prendas-carusel img {
     width: 100%;
     max-width: 200px;
-  }
+}
 
-  .camperon-verde img{
+.camperon-verde img{
     height:234.49px
-  }
+}
 
-  
-  .nombre-prenda {
+
+.nombre-prenda {
     font-size: 0.85rem;
-  }
+}
 
-  .precio-carrusel {
+.precio-carrusel {
     font-size: 1rem;
-  }
+}
 
 
-  .barra-seguimiento{
+.barra-seguimiento{
     padding: 3rem
-  }
+}
 
-  .carousel-control-next-icon{
+.carousel-control-next-icon{
     margin-right: -8rem;
 }
 
@@ -1325,75 +1322,75 @@ h4{
 
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .titulo-producto-principal {
+.titulo-producto-principal {
     font-size: 6.5rem;
     margin-left: -2rem;
     width: 110%;
-  }
+}
 
-   .hero-img {
+.hero-img {
     width: 1180px;
-  }
+}
 
-  .img-outfit-principal {
+.img-outfit-principal {
     width: 420px;
     left: -14rem;
     top: 3rem;
-  }
+}
 
 
     .descripcion {
     max-width: 380px;
     font-size: 0.95rem;
-  }
+}
 
-  .precio-hero {
+.precio-hero {
     font-size: 2rem;
     margin-top: -1.5rem;
-  }
+}
 
-  .boton-añadir-carrito {
+.boton-añadir-carrito {
     width: 45%;
-  }
+}
 
-   .hero {
+.hero {
     padding: 0 6rem;
     gap: 3rem;
-  }
+}
 
 
-   .prendas-carusel {
+.prendas-carusel {
     gap: 2.5rem;      
     padding: 0 2rem;
-  }
+}
 
 
-  .prendas-carusel article {
+.prendas-carusel article {
     max-width: 220px; 
-  }
+}
 
- 
-  .prendas-carusel img {
+
+.prendas-carusel img {
     width: 100%;
     max-width: 200px;
-  }
+}
 
-  .camperon-verde img{
+.camperon-verde img{
     height:234.49px
-  }
+}
 
-  
-  .nombre-prenda {
+
+.nombre-prenda {
     font-size: 0.85rem;
-  }
+}
 
-  .precio-carrusel {
+.precio-carrusel {
     font-size: 1rem;
-  }
+}
 
 .barra-seguimiento{
     padding: 3rem
-  }
+}
 
     .carousel-control-next-icon{
     margin-right: -7rem;
@@ -1405,13 +1402,13 @@ h4{
 
 .img-categorias {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* siguen siendo 4 */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1.5rem;
     padding: 0 3rem;
 }
 
 .img-categorias div {
-    max-width: 180px;   /* 🔑 achica contenedor */
+    max-width: 180px;   
     margin: 0 auto;
 }
 
@@ -1430,7 +1427,7 @@ h4{
 }
 
 @media (min-width: 1300px) and (max-width: 1400px) {
-    .titulo-producto-principal{
-       margin-left: -5.5rem;
-    }
+.titulo-producto-principal{
+    margin-left: -5.5rem;
+}
 }
